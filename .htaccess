@@ -1,0 +1,5 @@
+# Authentication
+##AuthName "Dev Access"
+##AuthType Basic
+##AuthUserFile .htpasswd
+##Require valid-user

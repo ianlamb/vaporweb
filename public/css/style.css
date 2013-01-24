@@ -1,0 +1,323 @@
+/*
+    Color Palette
+		blue = #0392c1
+		gold = #ffba00
+
+	Style Reference
+		-webkit-
+		-moz-
+		transition: all .2s;
+		border-radius: 0px 0px 15px 15px;
+		box-shadow: 0px 0px 5px #555;
+		text-shadow: 0px 0px 5px #555;
+		background: -webkit-gradient(linear, left top, left bottom, from(#33C2F1), to(#0392c1));
+		background: -moz-linear-gradient(top,  #33C2F1,  #0392c1);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#33C2F1', endColorstr='#0392c1');
+		@font-face{ font-family: titlefont; src: url('../fonts/GODOFWAR.TTF'); }
+*/
+
+/* BASE DEFINITIONS */
+html {
+    font-family: verdana, helvetica, sans-serif !important;
+	font-size: 1.0em;
+	color: #222222;
+    background: #f6f6f6;
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	box-sizing: border-box;
+	overflow: hidden;
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	margin: 0;
+	padding: 0;
+    background-color: transparent;
+}
+
+a:link,a:visited {
+    color: #0392c1;
+    text-decoration: none;
+}
+a:hover{
+    color: #ffba00;
+}
+
+h1 {
+	font-size: 3.0em;
+    color: #222222;
+	text-shadow: 0 1px 1px #cccccc;
+	margin: 5px 0;
+}
+h2 {
+	font-size: 1.8em;
+    color: #222222;
+	text-shadow: 0 1px 1px #cccccc;
+	margin: 5px 0;
+}
+h3 {
+	font-size: 1.2em;
+    color: #33C2F1;
+	text-shadow: 0 1px 1px #cccccc;
+	margin: 5px 0;
+}
+p {
+	font-size: 1.0em;
+	margin: 0 0 5px 0;
+}
+
+/* OBLIGATORY CLASSES */
+.clear{ clear:both; }
+.bold{ font-weight:bold; }
+.italic{ font-style:italic; }
+.underline{ text-decoration:underline; }
+.spacer{ display:block; height:20px; }
+.float_right{ float:right; }
+.float_left{ float:left; }
+.center{ margin: 0 auto; }
+.no_border{ border:0; }
+.biggest{ font-size:3.4em; }
+.bigger{ font-size:2.2em; }
+.big{ font-size:1.4em; }
+.medium{ font-size: 1.0em }
+.small { font-size: 0.8em }
+.smallest { font-size: 0.6em }
+
+/* MAIN ELEMENTS */
+/** CONTENT **/
+#content {
+	background: url('../img/wall-default.jpg') no-repeat left top fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-ms-background-size: cover;
+	background-size: cover;
+	box-sizing: border-box;
+	position: fixed;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+
+/** TASKBAR **/
+#taskbar {
+	box-sizing: border-box;
+	border-top: 1px solid #999999;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	height: 40px;
+	background: url('../img/misc/button-gloss.png') repeat-x scroll 0 -31px;
+	box-shadow: 0 0 5px #666666;
+	z-index: 100;
+}
+#options {
+	box-sizing: border-box;
+	float: left;
+	width: 40px;
+	height: 40px;
+	margin: 0 20px 0 10px;
+	background: url('../img/cogwheel.png') no-repeat center;
+	cursor: pointer;
+	opacity: 1.0;
+}
+#options:hover {
+	opacity: 1.0;
+}
+#options > ul {
+	list-stype-type: none;
+	padding: 0;
+	margin: 0;
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 40px;
+	background: #eeeeee;
+	border: 1px solid #999999;
+	box-shadow: 1px 1px 5px #999999;
+}
+#options > ul > li {
+	list-stype-type: none;
+	padding: 10px 15px;
+	margin: 1px 1px;
+	box-sizing: border-box;
+	border: 1px solid transparent;
+}
+#options > ul > li:hover {
+	border: 1px solid #999999;
+	background: -webkit-gradient(linear, left top, left bottom, from(#33C2F1), to(#0392c1));
+	background: -moz-linear-gradient(top,  #33C2F1,  #0392c1);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#33C2F1', endColorstr='#0392c1');
+}
+#tasks {
+	box-sizing: border-box;
+	width: auto;
+	height: 100%;
+}
+
+/** CONTEXT **/
+div.vos-context {
+	box-sizing: border-box;
+	position: absolute;
+	top: 40px;
+	bottom: 0;
+	width: 100%;
+	z-index: 50;
+}
+div#context-menu {
+	box-sizing: border-box;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	width: 120px;
+}
+div.vos-context-item {
+	box-sizing: border-box;
+	position: relative;
+	float: left;
+	width: 20px;
+	height: 14px;
+	margin: 13px 5px;
+	border: 1px solid #222222;
+	background: #33C2F1;
+	background: -webkit-gradient(linear, left top, right bottom, from(#33C2F1), to(#0392c1));
+	background: -moz-linear-gradient(top,  #33C2F1,  #0392c1);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#33C2F1', endColorstr='#0392c1');
+	z-index: 3;
+}
+div.vos-context-item-active {
+	box-sizing: border-box;
+	position: absolute;
+	top: 8px;
+	left: 0;
+	bottom: 8px;
+	width: 30px;
+	border: 2px solid #cccccc;
+	z-index: 5;
+}
+
+/** FILE ICONS **/
+div.vos-icon {
+	box-sizing: border-box;
+	position: absolute;
+	width: 84px;
+	padding: 6px;
+	text-align: center;
+	cursor: pointer;
+}
+div.vos-icon-active {
+	background: #002299;
+}
+div.vos-icon > img.vos-icon-img {
+	box-sizing: border-box;
+	display: block;
+	height: 44px;
+	margin: 6px auto;
+	border: 1px solid #cccccc;
+}
+div.vos-icon > div.vos-icon-label {
+	box-sizing: border-box;
+	line-height: 12px;
+	font-size: 10px;
+	color: #f6f6f6;
+}
+
+/** WINDOWS **/
+div.vos-window {
+	box-sizing: border-box;
+	position: absolute;
+	width: 400px;
+	height: 300px;
+	border: 1px solid #333333;
+	/* box-shadow: 0 1px 4px #222222; */
+	/* border-radius: 6px 6px 6px 6px; */
+	z-index: 5;
+	opacity: 0.8;
+	resize: both;
+	overflow: auto;
+}
+div.vos-window-active {
+	opacity: 1.0;
+}
+div.vos-window > div.vos-window-title {
+	box-sizing: border-box;
+	position: relative;
+	left: 0;
+	right: 0;
+	top: 0;
+	height: 20px;
+	padding: 0 4px;
+	border-bottom: 1px solid #333333;
+	/* border-radius: 4px 4px 0 0; */
+	cursor: default;
+	color: #222222;
+	/* background: url('../img/misc/button-gloss.png') repeat-x scroll 0 -41px; */
+	background: #33C2F1;
+	background: -webkit-gradient(linear, left top, right bottom, from(#33C2F1), to(#0392c1));
+	background: -moz-linear-gradient(top,  #33C2F1,  #0392c1);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#33C2F1', endColorstr='#0392c1');
+}
+div.vos-window > div.vos-window-title > div.vos-window-controls { float: right; }
+div.vos-window > div.vos-window-title > div.vos-window-controls > i { cursor: pointer; }
+div.vos-window > div.vos-window-body {
+	box-sizing: border-box;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 20px;
+	bottom: 0;
+	padding: 1px 4px;
+	/* border-radius: 0 0 4px 4px; */
+	cursor: default;
+	color: #222222;
+	background: #ffffff;
+	background: -webkit-gradient(linear, left top, right bottom, from(#ffffff), to(#e6e6e6));
+	background: -moz-linear-gradient(top,  #ffffff,  #e6e6e6);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e6e6e6');
+}
+
+/** MENUS **/
+div.vos-menu {
+
+}
+
+
+/* MISCELLANEOUS */
+#login-div {
+	box-sizing: border-box;
+	padding: 10px 30px;
+	margin: 10% auto !important;
+	float: none !important;
+}
+#register-div {
+	box-sizing: border-box;
+	padding: 10px 30px;
+	margin: 10% auto !important;
+	float: none !important;
+}
+
+/* MEDIA: TABLET */
+@media screen and (max-width: 767px) {
+	
+}
+
+/* MEDIA: MOBILE */
+@media screen and (max-width: 480px) {
+	
+}
