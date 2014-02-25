@@ -70,9 +70,9 @@ return array(
 		'mysql' => array(
 			'driver'   => 'mysql',
 			'host'     => 'localhost',
-			'database' => 'vos_db',
+			'database' => 'ianlamb',
 			'username' => 'root',
-			'password' => '',
+			'password' => 'bsszvwbtyizs',
 			'charset'  => 'utf8',
 			'prefix'   => '',
 		),

@@ -13,7 +13,7 @@ return array(
 	|
 	*/
 
-	'url' => 'http://vapouros.ianlamb.com',
+	'url' => 'http://vapour.ianlamb.com',
 
 	/*
 	|--------------------------------------------------------------------------
